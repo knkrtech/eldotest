@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthMarket Solutions</title>
+    <title>Eldo Aged Care Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -46,7 +46,7 @@
         .hero {
             background: linear-gradient(45deg, #4A90E2, #5AB9EA);
             color: #fff;
-            padding: 4rem 2rem;
+            padding: 6rem 2rem; /* Increased padding for more height */
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
         .hero-content {
@@ -58,11 +58,25 @@
             margin-bottom: 1rem;
             font-weight: 700;
         }
-        .quiz-banner {
+        .hero p {
+            margin-bottom: 2rem; /* Increased margin for consistent spacing */
+        }
+        .hero .cta-button {
+            background: #fff;
+            color: #4A90E2;
+            font-weight: 600;
+            padding: 0.7rem 1.5rem; /* Larger button */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added shadow for visibility */
+        }
+        .hero .cta-button:hover {
+            background: #f0f0f0;
+        }
+        .promo-banner {
             background: #f0f8ff;
             padding: 1rem;
             text-align: center;
             font-weight: 600;
+            color: #4A90E2;
         }
         main {
             padding: 2rem;
@@ -111,12 +125,13 @@
         <nav>
             <a href="#solutions">Solutions</a>
             <a href="#insights">Insights</a>
+            <a href="#pricing">Pricing</a>
             <a href="#" class="cta-button">Contact Us</a>
         </nav>
     </header>
 
-    <div class="quiz-banner">
-        What kind of hospital marketer are you? Take the quiz to find out.
+    <div class="promo-banner">
+        Free Aged Care Diagnostics: Boost Your Efficiency Today!
     </div>
 
     <section class="hero">
@@ -136,7 +151,7 @@
             </div>
             <div class="feature-content">
                 <h3>Basic Online Presence</h3>
-                <p>Custom subdomain site ([yourclinic].eldo.care) to showcase your services. Ideal for businesses without an existing website-all in 24 hours.</p>
+                <p>Custom subdomain site to showcase your services. Ideal for businesses without an existing website-all in 24 hours.</p>
             </div>
         </div>
 
