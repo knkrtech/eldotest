@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldo Aged Care Solutions - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #5AB9EA;
+            --text-color: #333;
+            --background-color: #f5f7fa;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, var(--background-color) 0%, #e4e8eb 100%);
+            font-size: 16px;
+        }
+
+        /* Responsive typography */
+        @media screen and (min-width: 320px) {
+            body {
+                font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            body {
+                font-size: 22px;
+            }
+        }
+
+        header {
+            background: linear-gradient(to right, #ffffff, #f8f9fa);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(45deg, #3A7BC8, #4AA8D8);
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, #81D4FA 100%);
+            color: #fff;
+            padding: 6rem 2rem;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            margin-bottom: 2rem;
+        }
+
+        .hero .cta-button {
+            background: rgba(255,255,255,0.9);
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 0.7rem 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero .cta-button:hover {
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .promo-banner {
+            background: linear-gradient(to right, #f0f8ff, #e6f2ff);
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(to right, #ffffff, #f8f9fa);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-image {
+            flex: 1;
+            margin-right: 2rem;
+        }
+
+        .feature-content {
+            flex: 2;
+        }
+
+        .placeholder-image {
+            background: linear-gradient(135deg, #e6f2ff 0%, #d1e6ff 100%);
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            border-radius: 10px;
+        }
+
+        .bottom-cta {
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+
+        .bottom-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                margin: 0.5rem 1rem 0.5rem 0;
+            }
+
+            .hero {
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            }
+
+            .feature {
+                flex-direction: column;
+            }
+
+            .feature-image {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .placeholder-image {
+                height: 200px;
+            }
+        }
+
+        /* Retina support */
+        @media 
+        (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) {
+            .logo {
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Eldo</div>
+        <nav>
+            <a href="solutions.html">Solutions</a>
+            <a href="insights.html">Insights</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="promo-banner">
+        Boost Your Efficiency Today!
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We're here to help. Reach out to us for any questions or support.</p>
+            <a href="#" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="feature">
+            <div class="feature-image">
+                <div class="placeholder-image">Contact Icon</div>
+            </div>
+            <div class="feature-content">
+                <h3>Get in Touch</h3>
+                <p>Email: <a href="mailto:contact@eldo.care">contact@eldo.care</a></p>
+                <p>Phone: <a href="tel:+66123456789">+66 123 456 789</a></p>
+                <p>WhatsApp: <a href="https://wa.me/66123456789">+66 123 456 789</a></p>
+                <p>LINE: <a href="https://line.me/ti/p/~eldocare">@eldocare</a></p>
+            </div>
+        </div>
+    </main>
+
+    <section class="bottom-cta">
+        <h2>Ready to elevate your aged care services?</h2>
+        <p>Contact us to learn how Eldo can benefit your business.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+</body>
+</html>
